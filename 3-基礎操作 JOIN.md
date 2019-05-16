@@ -11,21 +11,23 @@
 查詢結果只會返回符合條件的資料.
 
 customers資料表
-| c_id | name | 
-| ---|--- | 
-| 1 | AAA | 
-| 2 | BBB | 
-| 3 | CCC | 
+
+c_id | name
+--- | ---
+1 | AAA
+2 | BBB
+3 | CCC
 
 orders資料表
-| order_no | c_id | 
-| ---|--- | 
-| 134 | 3 | 
-| 546 | 3 | 
-| 234 | 1 | 
-| 211 | 2 | 
-| 222 | 1 | 
-| 112 | 9 | 
+
+order_no | c_id
+---- | ---
+134 | 3
+546 | 3
+234 | 1
+211 | 2
+222 | 1
+112 | 9 
 
 查詢的命令
 ```shell
@@ -36,13 +38,14 @@ ON customers.C_Id=orders.C_Id;
 ```
 
 查詢結果
-| name | order_no | 
-| ---|--- | 
-| CCC | 134 | 
-| CCC | 546 | 
-| AAA | 234 | 
-| BBB | 211 | 
-| AAA | 222 | 
+
+name | order_no
+--- | ---
+CCC | 134
+CCC | 546
+AAA | 234
+BBB | 211
+AAA | 222
 
 ## LEFT JOIN
 
